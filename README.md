@@ -21,12 +21,19 @@ Demonstrate a full STLC (Software Testing Life Cycle) implementation manually.
 All documents are uploaded in both Excel formats inside this repository.
 
 📝 Test Plan
+
 📊 Test Scenarios
+
 ✅ Test Cases
+
 🔄 Test Execution Report
+
 🐞 Defect Report
+
 ✅ RTM
+
 📑 Test Summary Report (TSR)
+
 🛠️ Tools & Environment
 
 • Testing Type → Manual Functional Testing
@@ -38,9 +45,13 @@ All documents are uploaded in both Excel formats inside this repository.
 🐞 Key Defects Identified
 
 • FB_001 → Simulated issue: Show Password visibility malfunction
+
 • FB_002 → Simulated issue: Forgot Password redirection issue
+
 • FB_003 → Email validation message inconsistency
+
 • FB_004 → Remember Me session persistence issue
+
 📊 Summary
 
 Total Test Cases: 29
