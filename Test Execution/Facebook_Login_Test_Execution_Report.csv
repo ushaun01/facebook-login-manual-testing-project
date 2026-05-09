@@ -1,0 +1,30 @@
+﻿Defect ID ,Test Scenario,Execution Date,Tester,Actual Result,Status,Defect ID 
+TC_P01,Valid login with email,22-Jan-26,Usha Nazare,As expected,Pass,-
+TC_P02,Valid login with phone number,22-Jan-26,Usha Nazare,As expected,Pass,-
+TC_P03,Show Password feature,22-Jan-26,Usha Nazare,Issue found during execution,Fail,FB_001
+TC_P04,Forgot Password flow,22-Jan-26,Usha Nazare,Issue found during execution,Fail,FB_002
+TC_P05,Remember Me,22-Jan-26,Usha Nazare,Issue found during execution,Fail,FB_004
+TC_P06,Login button enabled,22-Jan-26,Usha Nazare,As expected,Pass,-
+TC_P07,Logout functionality,22-Jan-26,Usha Nazare,As expected,Pass,-
+TC_P08,Create New Account link,22-Jan-26,Usha Nazare,As expected,Pass,-
+TC_P09,Cross-browser login,22-Jan-26,Usha Nazare,As expected,Pass,-
+TC_P10,Login page loads correctly,22-Jan-26,Usha Nazare,As expected,Pass,-
+TC_P11,Password field masked by default,22-Jan-26,Usha Nazare,As expected,Pass,-
+TC_P12,Responsive design,22-Jan-26,Usha Nazare,As expected,Pass,-
+TC_N01,Invalid email format,22-Jan-26,Usha Nazare,Issue found during execution,Fail,FB_003
+TC_N02,Incorrect password,22-Jan-26,Usha Nazare,As expected,Pass,-
+TC_N03,Non-existent account,22-Jan-26,Usha Nazare,As expected,Pass,-
+TC_N04,Empty email field,22-Jan-26,Usha Nazare,As expected,Pass,-
+TC_N05,Empty password field,22-Jan-26,Usha Nazare,As expected,Pass,-
+TC_N06,Both fields empty,22-Jan-26,Usha Nazare,As expected,Pass,-
+TC_N07,XSS attempt,22-Jan-26,Usha Nazare,As expected,Pass,-
+TC_N08,Deactivated account,22-Jan-26,Usha Nazare,As expected,Pass,-
+TC_N09,Password too long,22-Jan-26,Usha Nazare,As expected,Pass,-
+TC_N10,Whitespace handling,22-Jan-26,Usha Nazare,As expected,Pass,-
+TC_N11,Browser autofill with old creds,22-Jan-26,Usha Nazare,As expected,Pass,-
+TC_N12,Invalid phone format,22-Jan-26,Usha Nazare,As expected,Pass,-
+TC_N13,Password case sensitivity,22-Jan-26,Usha Nazare,As expected,Pass,-
+TC_N14,Network disconnected,22-Jan-26,Usha Nazare,As expected,Pass,-
+TC_N15,Session timeout on login page,22-Jan-26,Usha Nazare,As expected,Pass,-
+TC_N16,Multiple failed attempts lockout,22-Jan-26,Usha Nazare,As expected,Pass,-
+TC_N17,Invalid characters in password,22-Jan-26,Usha Nazare,As expected,Pass,-

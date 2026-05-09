@@ -1,0 +1,95 @@
+Facebook Login Manual Testing - Test Plan
+=====================================================
+
+Document Control
+----------------
+Project Name : Facebook Login Manual Testing
+Prepared By  : Usha Nazare
+Date         : 20 January 2026 
+
+1. Introduction
+----------------
+This Test Plan outlines the testing approach for validating the Facebook Login functionality of the web application. 
+The goal is to ensure that login features perform as expected under valid, invalid, and boundary input conditions.
+
+2. Scope
+---------
+In Scope:
+- Login with valid credentials (email/phone)
+- Invalid login attempts
+- Password masking and visibility
+- Remember Me and Forgot Password flows
+- Input field validation
+- Cross-browser testing
+
+Out of Scope:
+- Full registration/sign-up flow
+- Mobile app login testing
+- OAuth/third-party integrations
+
+3. Objectives
+--------------
+- Validate all positive and negative login scenarios.
+- Ensure input fields and validations work as intended.
+- Identify and log defects with detailed reproduction steps.
+
+4. Test Items
+--------------
+1. Login Form - Email/Phone + Password fields
+2. Show Password - Visibility toggle feature
+3. Forgot Password - Password reset flow
+4. Remember Me - Session persistence
+5. Validation - Input and security handling
+
+5. Test Approach
+-----------------
+Manual functional testing performed on the web version of Facebook.
+Testing includes:
+- Positive testing for valid credentials
+- Negative testing for invalid inputs
+- Boundary testing for input limits
+- Security validation for SQL and XSS
+Execution done using browser tools and manual observation.
+
+6. Entry & Exit Criteria
+-------------------------
+Entry Criteria:
+- Login module ready for testing
+- Requirements finalized
+
+Exit Criteria:
+- All test cases executed
+- Defects closed or deferred
+
+7. Test Deliverables
+---------------------
+- Test Plan Document
+- Test Scenarios and Test Cases
+- Test Execution Report
+- Bug Report
+- Traceability Matrix
+- Test Summary Report
+
+8. Test Environment
+--------------------
+Environment: QA / Staging
+OS: Windows 11
+Browser: Chrome, Edge
+Tools: MS Excel, MS Word
+
+9. Testing Schedule
+---------------------
+Activity | Start Date | End Date
+--------------------------------
+Test Planning | 20 Jan 2026 | 21 Jan 2026
+Test Case Design | 21 Jan 2026 | 22 Jan 2026
+Test Execution | 22 Jan 2026|22 Jan 2026
+Reporting | 23 Jan 2026 | 23 Jan 2026
+
+
+10. Approval
+-------------
+Role | Name | Signature | Date
+--------------------------------
+QA Engineer | Usha Nazare | - | 24 Jan 2026
+

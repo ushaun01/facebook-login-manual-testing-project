@@ -1,0 +1,5 @@
+﻿Bug ID,Bug Description,Severity,Status,Steps to Reproduce,Linked Test Case ID
+FB_001,Show Password button not functioning properly,High,Open,Click on Show Password icon does not display password text,TC_P03
+FB_002,Forgot Password link redirects incorrectly,High,Open,Forgot Password link opens wrong page,TC_P04
+FB_003,Invalid email accepted without validation message,Medium,Open,System allows invalid email format without validation,TC_N01
+FB_004,Remember Me not storing credentials properly,Medium,Open,Checked Remember Me does not retain credentials after logout,TC_P05

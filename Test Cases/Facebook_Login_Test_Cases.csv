@@ -1,0 +1,68 @@
+﻿Test Case ID,Scenario ID,Test Scenario Description,Test Steps,Expected Result,Actual Result,Status,Comments
+TC_P01,TS_P01,Verify login with valid email and password,"1. Open Facebook login page
+2. Enter valid email and password
+3. Click on Login button",User should log in successfully and be redirected to the homepage.,User logged in successfully and redirected to homepage.,Pass,Working as expected.
+TC_P02,TS_P02,Verify login with valid phone number and password,"1. Open Facebook login page
+2. Enter valid phone number and password
+3. Click on Login",User should log in successfully using phone credentials.,Login successful using phone credentials.,Pass,Working fine.
+TC_P03,TS_P03,Verify the 'Show Password' button displays password text when clicked,"1. Enter password
+2. Click on Show Password icon",Password text should become visible.,Show Password button not functioning properly.,Fail,Bug ID FB_001
+TC_P04,TS_P04,Verify 'Forgot Password' functionality redirects to reset page,"1. Click on 'Forgot Password'
+2. Enter registered email
+3. Submit reset request",Password reset page should appear and reset email should be sent.,Forgot Password link redirects incorrectly.,Fail,Bug ID FB_002
+TC_P05,TS_P05,Verify 'Remember Me' checkbox stores credentials for future sessions,"1. Check Remember Me
+2. Log in
+3. Logout and reopen login page",Email/Phone field should auto-fill with last credentials.,Remember Me not storing credentials properly.,Fail,Bug ID FB_005
+TC_P06,TS_P06,Verify the 'Login' button becomes enabled only after valid input,"1. Open login page
+2. Leave fields empty
+3. Check Login button
+4. Fill valid fields",Login button should activate only when both fields are filled.,Button enabled correctly only after valid input.,Pass,Validated.
+TC_P07,TS_P07,Verify 'Logout' functionality logs the user out successfully,"1. Log in
+2. Click on profile menu
+3. Select Logout",User should be logged out and redirected to login screen.,User logged out successfully.,Pass,Working fine.
+TC_P08,TS_P08,Verify 'Create New Account' link opens the signup form,1. Click on 'Create New Account' link,Signup form should appear.,Signup form opened successfully.,Pass,Validated.
+TC_P09,TS_P09,Verify login works across multiple browsers,"1. Perform login on Chrome, Edge, Firefox",Login should succeed on all browsers.,Login successful on all tested browsers.,Pass,Cross-browser passed.
+TC_P10,TS_P10,Verify login page loads within acceptable time (under 3s),"1. Load login page
+2. Measure page load time",Page should load under 3 seconds.,Page loaded in 2.1 seconds.,Pass,Performance acceptable.
+TC_P11,TS_P11,Verify password input field is masked by default,"1. Open login page
+2. Observe password input field",Password characters should be hidden by default.,Password hidden as expected.,Pass,Working fine.
+TC_P12,TS_P12,Verify login page UI is responsive across devices,"1. Open login page on desktop, tablet, mobile",Layout should adjust correctly on all devices.,UI is responsive and aligned correctly.,Pass,Responsive verified.
+TC_N01,TS_N01,Verify system rejects invalid email format,"1. Enter invalid email (e.g. user@)
+2. Enter valid password
+3. Click Login",Validation error should be displayed for invalid email.,Invalid email accepted without validation message.,Fail,Bug ID FB_004
+TC_N02,TS_N02,Verify error message for incorrect password,"1. Enter valid email and incorrect password
+2. Click Login",Error message should display 'Incorrect password'.,Error displayed correctly.,Pass,Working fine.
+TC_N03,TS_N03,Verify system behavior when non-existent account is entered,"1. Enter unregistered email
+2. Click Login",Error should display 'Account not found'.,Proper error shown.,Pass,Validated.
+TC_N04,TS_N04,Verify login behavior when email field is empty,"1. Leave email empty
+2. Enter password
+3. Click Login",Prompt should ask to enter email.,Validation message shown.,Pass,Working fine.
+TC_N05,TS_N05,Verify login behavior when password field is empty,"1. Enter valid email
+2. Leave password empty
+3. Click Login",Prompt should ask to enter password.,Validation shown correctly.,Pass,Fine.
+TC_N06,TS_N06,Verify login behavior when both fields are empty,"1. Leave both fields empty
+2. Click Login",Error should display for missing inputs.,Validation shown correctly.,Pass,Working fine.
+TC_N08,TS_N07,Verify system prevents XSS attacks via input fields,"1. Enter `<script>alert('test')</script>` in email field
+2. Click Login",System should sanitize and block script.,XSS input blocked successfully.,Pass,Security fine.
+TC_N09,TS_N08,Verify login with deactivated account,"1. Enter deactivated user credentials
+2. Click Login",Error: Account deactivated.,Proper message displayed.,Pass,Working fine.
+TC_N10,TS_N09,Verify behavior for excessively long passwords,"1. Enter 100-character long password
+2. Click Login",System should reject long input gracefully.,Error shown for long input.,Pass,Validated.
+TC_N11,TS_N10,Verify trimming of whitespaces in email input,"1. Enter email with leading/trailing spaces
+2. Click Login",Spaces should be trimmed automatically.,Spaces trimmed and login successful.,Pass,Working fine.
+TC_N12,TS_N11,Verify autofill with outdated credentials,"1. Autofill old credentials
+2. Click Login",System should prompt for new credentials.,Prompt displayed correctly.,Pass,Validated.
+TC_N13,TS_N12,Verify validation for invalid phone number format,"1. Enter invalid phone format
+2. Click Login",Error should display for invalid phone number.,Error shown correctly.,Pass,Working fine.
+TC_N14,TS_N13,Verify password is case-sensitive,"1. Enter correct email but different password case
+2. Click Login",Login should fail due to case sensitivity.,Login failed as expected.,Pass,Working fine.
+TC_N15,TS_N14,Verify login attempt without internet connection,"1. Disconnect internet
+2. Enter valid credentials
+3. Click Login",System should display 'No network' error.,Error displayed correctly.,Pass,Validated.
+TC_N16,TS_N15,Verify session timeout behavior after inactivity,"1. Log in
+2. Stay inactive for 15 mins
+3. Perform any action",User should be prompted to refresh session.,Session expired message shown.,Pass,Working fine.
+TC_N17,TS_N16,Verify system locks account after multiple failed attempts,"1. Enter wrong password 5 times
+2. Observe behavior",Account should be temporarily locked.,Lockout message displayed.,Pass,Working fine.
+TC_N18,TS_N17,Verify input validation for invalid password characters,"1. Enter password with invalid symbols (!@#...)
+2. Click Login",System should reject invalid symbols.,Rejected invalid symbols successfully.,Pass,Working fine.

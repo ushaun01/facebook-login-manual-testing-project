@@ -1,0 +1,30 @@
+﻿Scenario ID,Scenario Description,Expected Result,Status
+TS_P01,Verify login with valid email and password,User logs in successfully and is redirected to the homepage,Pass
+TS_P02,Verify login with valid phone number and password,User logs in successfully using phone credentials,Pass
+TS_P03,Verify the 'Show Password' button displays password text when clicked,Password text should become visible,Fail
+TS_P04,Verify 'Forgot Password' functionality redirects to reset page,User receives reset email and can reset password,Fail
+TS_P05,Verify 'Remember Me' checkbox stores credentials for future sessions,User credentials are pre-filled on next visit,Fail
+TS_P06,Verify the 'Login' button becomes enabled only after valid input,Button activates when both fields are filled,Pass
+TS_P07,Verify 'Logout' functionality logs the user out successfully,User is redirected back to the login screen,Pass
+TS_P08,Verify 'Create New Account' link opens the signup form,Signup form is displayed,Pass
+TS_P09,Verify login works across multiple browsers,"Login successful on Chrome, Edge, Firefox",Pass
+TS_P10,Verify login page loads within acceptable time (under 3s),Page loads quickly without layout issues,Pass
+TS_P11,Verify password input field is masked by default,Password characters hidden,Pass
+TS_P12,Verify login page UI is responsive across devices,Layout adjusts correctly for all screen sizes,Pass
+TS_N01,Verify system rejects invalid email format,Validation error displayed for invalid email,Fail
+TS_N02,Verify error message for incorrect password,‘Incorrect password’ message displayed,Pass
+TS_N03,Verify system behavior when non-existent account is entered,Error displayed: ‘Account not found’,Pass
+TS_N04,Verify login behavior when email field is empty,Prompt displayed to enter email,Pass
+TS_N05,Verify login behavior when password field is empty,Prompt displayed to enter password,Pass
+TS_N06,Verify login behavior when both fields are empty,Error displayed for missing inputs,Pass
+TS_N07,Verify system prevents XSS attacks via input fields,System sanitizes and blocks input,Pass
+TS_N08,Verify login with deactivated account,Error: Account deactivated,Pass
+TS_N09,Verify behavior for excessively long passwords,System rejects long input gracefully,Pass
+TS_N10,Verify trimming of whitespaces in email input,Spaces trimmed automatically,Pass
+TS_N11,Verify autofill with outdated credentials,System prompts for new credentials,Pass
+TS_N12,Verify system validation for invalid phone number format,Error displayed for invalid phone format,Pass
+TS_N13,Verify password is case-sensitive,Login fails with incorrect case,Pass
+TS_N14,Verify login attempt without internet connection,‘No network’ error displayed,Pass
+TS_N15,Verify session timeout behavior after inactivity,User prompted to refresh session,Pass
+TS_N16,Verify system locks account after multiple failed attempts,Temporary lockout message displayed,Pass
+TS_N17,Verify input validation for invalid password characters,System rejects invalid symbols,Pass
