@@ -1,5 +1,4 @@
 
-
 📘 Project Overview
 
 This project focuses on manual testing of the Facebook Login functionality to ensure that all critical features like login validation, password masking, remember-me, and forgot-password work correctly across browsers and devices. Testing includes positive, negative, and security scenarios based on real-world use cases.
