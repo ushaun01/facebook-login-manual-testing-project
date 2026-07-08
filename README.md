@@ -6,7 +6,7 @@ This project focuses on manual testing of the Facebook Login functionality to en
 ---
 🌐 Application Under Test (AUT)
 
-🔗 https://www.facebook.com/login.php/
+🔗 https://www.facebook.com/login.php/ 
 
 ---
 🧾 Objectives
